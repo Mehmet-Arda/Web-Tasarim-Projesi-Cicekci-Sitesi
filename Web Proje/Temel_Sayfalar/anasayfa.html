@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <link rel="icon" type="image/x-icon" href="../Görseller/favicon.png" type="image/x-ico" />
+        <title>Ana Sayfa</title>
+      
+
+        <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
+
+
+        <link rel="stylesheet" href="../Stil_Dosyaları/anasayfa_stil.css">
+        <link rel="stylesheet" href="../Stil_Dosyaları/nav_bar_stil.css">
+
+        <link rel="stylesheet" href="../Stil_Dosyaları/slider_stil.css">
+        <link rel="stylesheet" href="../Stil_Dosyaları/cicek_kart_stil.css">
+        <link rel="stylesheet" href="../Stil_Dosyaları/footer_stil.css">
+
+
+
+
+
+        <link rel="stylesheet" href="../Guven/popup.css">
+        <link rel="stylesheet" href="../Guven/duyurutable.css">
+
+
+
+    </head>
+
+
+    <body>
+        
+
+        <nav class="logonav">
+            <ul class="logonav__list">
+
+
+                <li class="logonav__listlogo">
+                    <a href="../Temel_Sayfalar/anasayfa.html"><img src="../Görseller/cicekyenilogo-1.png" alt=""></a>
+                </li>
+                
+
+               <li class="search-box">
+                   
+                       <input class="search-txt" type="text" name="" placeholder="Aramak için Tıklayın">
+                        <a class="search-btn" href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                </li>
+
+                <li class="basket">
+                    <i class="fas fa-shopping-basket"></i>
+                </li>
+
+               <li class="profile">
+
+                    <i id="profile" class="fas fa-user-circle"></i>
+
+                    <div id="dd" class="dd_menu_container">
+
+                        <div class="dd_menu_before"></div>
+
+                        <div class="dd_menu">
+                            <div class="dd_left">
+                                <ul>
+                                    <li ><i id="Giris_icon" class="fas fa-sign-in-alt"></i></li>
+                                    <li ><i id="Kaydol_icon" class="fas fa-user-plus"></i></li>
+                                    <li ><i id="Fav_icon" class="fas fa-star"></i></li>
+                                  
+                                </ul>
+                            </div>
+    
+                            <div class="dd_right">
+                                <ul>
+                                    <li id="Giris"><a href="../Guven/giris_yap.html">Giriş Yap</a></li>
+                                    <li id="Kaydol"><a href="../Guven/uyelik.html">Kaydol</a></li>
+                                    <li id="Fav"><a href="#">Favoriler</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+               </li>
+               
+
+            </ul>
+        </nav>
+       
+        <script>
+           var profile =document.querySelector(".profile");
+           profile.addEventListener("click",function(){
+               this.classList.toggle("active");
+           })
+        </script>
+        
+
+
+
+
+        <nav class="nav">
+
+            <ul class="nav__list">
+
+                <a href="../Temel_Sayfalar/anasayfa.html">
+                    <li class="nav__listitem">
+                        <i class="fas fa-home"></i>
+                        Ana Sayfa
+                    </li>
+                </a>
+                
+
+                <li class="nav__listline"></li>
+
+
+                <li class="nav__listitem">
+                    <i class="fas fa-list"></i>
+                    Ürünlerimiz
+                    <ul class="nav__listitemdrop">
+                        <li>Çiçek Türleri
+                            <ul class="nav__listitemdrop2_turler">
+                                <a href="../Temel_Sayfalar/guller_listesi.html"><li>Güller</li></a>
+                                <a href="../Temel_Sayfalar/orkideler_listesi.html"><li>Orkide</li></a>
+                                <li>Antoryum</li>
+                                <li>Gerbera</li>
+                                <li>Lilyum</li>
+                            </ul>
+                        </li>
+                        <li>Gönderim Amacı
+                            <ul class="nav__listitemdrop2_amac">
+                                <li>Açılış & Kutlama</li>
+                                <li>Anneye</li>
+                                <li>Babaya</li>
+                                <li>Doğum Günü</li>
+                                <li>Nikah & Düğün</li>
+                                <li>Sevgiliye Çiçek</li>
+                            </ul>
+
+                        </li>
+                        
+                        <li>Hazırlanışa Göre
+                            <ul class="nav__listitemdrop2_hazirlanis">
+                                <li>Buketler</li>
+                                <li>Çelenk</li>
+                                <li>Vazo Çiçekleri</li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__listline"></li>
+
+                <li class="nav__listitem">
+                    <i class="fas fa-stream"></i>
+                    Birimlerimiz
+                    <ul class="nav__listitemdrop">
+                        <li>Alt Başlık 1</li>
+                        <li>Alt Başlık 2</li>
+                        <li>Alt Başlık 3</li>
+                    </ul>
+                </li>
+
+                <li class="nav__listline"></li>
+
+                <a href="../Guven/misyon_vizyon.html">
+                    <li class="nav__listitem">
+                        <i class="fas fa-bullseye"></i>
+                        Misyon-Vizyon
+                    </li>
+                </a>
+                
+
+                <li class="nav__listline"></li>
+                
+                <a href="../Guven/hakkimizda.html">
+                    <li class="nav__listitem">
+                        <i class="fas fa-question-circle"></i>
+                        Hakkımızda
+                    </li>
+                </a>
+                
+
+                <li class="nav__listline"></li>
+
+
+                <a href="../Temel_Sayfalar/iletisim.html">
+                    <li class="nav__listitem">
+                        <i class="fas fa-envelope"></i>
+                        İletişim
+                    </li>
+                </a>
+                
+
+            </ul>
+
+        </nav>
+
+
+        
+        <div class="home_container">
+
+            <div class="left_hbar">
+
+                <div class="left_hbar_baslik">ÇİÇEK TÜRLERİ</div>
+                <ul>
+                   
+                    <a href="../Temel_Sayfalar/guller_listesi.html"><li>Güller</li></a>
+                    <a href="../Temel_Sayfalar/orkideler_listesi.html"><li>Orkide</li></a>
+                    <a href="#"><li>Antoryum</li></a>
+                    <a href="#"><li>Gerbera</li></a>
+                    <a href="#"><li>Lilyum</li></a> 
+                    
+                </ul>
+            </div>
+
+
+
+            <!--*************************************************************************************************************-->
+
+
+
+
+            <div class="table">
+                <fieldset>
+                    <p>DUYURULAR</p>
+                    <div class="wrapper">
+                        <a href="#modalbox11" title="deneme mesajı">Haftanın Çalışanı <br> <small>28 / 11 / 2021</small> </a><br>
+                        <a href="#modalbox12">Çekiliş Bilgilendirmesi<br> <small>27 / 10 / 2021</small></a><br>
+                        <a href="#modalbox13">Kara Cuma Fırsatları Hakkında<br> <small>25 / 09 / 2021</small></a><br>
+                        <a href="#modalbox14">Öğretmenler Günü Kampanyası Hakkında<br> <small>02 / 03 / 2017</small></a><br>
+                        <a href="#modalbox15">Karışık Çiçek Paketleri Kampanyası Hakkında<br> <small>28 / 11 / 2021</small></a><br>
+                        <button id="dahafazla" onclick="window.location.href='../Guven/daha_fazla.html'"> Daha Fazla</button>
+                    </div>
+
+                    <div id="modalbox11" class="modal">
+                        <div class="modalcontent">
+                            <label for="duyuru1">Duyuru Yayınlanma Tarihi :</label>
+                            <label id="duyuru1" style="margin-left: 10px;">28 / 11 / 2021</label><br><br>
+                            <label>Açıklama :</label><br><br>
+                            <label>Haftanın çalışanı Mehmet Yalovalı olmuştur.Tebrik eder ve aynı çabayı diğer çalışanlarımızdan görmek dileğiyle.İyi çalışmalar dilerim.</label>
+                            <a href="#" class="modalclose">&times;</a>
+                        </div>
+                    </div>
+                    <div id="modalbox12" class="modal">
+                        <div  class="modalcontent">
+                            <label for="duyuru2">Duyuru Yayınlanma Tarihi :</label>
+                            <label id="duyuru1" style="margin-left: 10px;">27 / 10 / 2021</label><br><br>
+                            <label>Açıklama :</label><br><br>
+                            <label>Firmamız olarak çekiliş yapıyoruz.Kazanan şanslı arkadaşlar için 2 günlük tatil hediyemzidir.
+                                Katılım şartları sitemizin ana sayfasında  mevcuttur.İyi alışverişler dileriz</label>
+                            <a href="#" class="modalclose">&times;</a>
+                        </div>
+                    </div>
+                    <div id="modalbox13" class="modal">
+                        <div  class="modalcontent">
+                            <label for="duyuru2">Duyuru Yayınlanma Tarihi :</label>
+                            <label id="duyuru1" style="margin-left: 10px;">25 / 09 / 2021</label><br><br>
+                            <label>Açıklama :</label><br><br>
+                            <label>Kara cuma indirimlerinde bugüne özel papatyalar %45 indirimlidir.İyi alışverişler dileriz</label>
+                            <a href="#" class="modalclose">&times;</a>
+                        </div>
+                    </div>
+                    <div id="modalbox14" class="modal">
+                        <div  class="modalcontent">
+                            <label for="duyuru2">Duyuru Yayınlanma Tarihi :</label>
+                            <label id="duyuru1" style="margin-left: 10px;">24 / 11 / 2017</label><br><br>
+                            <label>Açıklama :</label><br><br>
+                            <label>Öğretmenler gününe özel bugün tüm çiçeklerimiz %15 indirimlidir.İyi alışverişler dileriz.</label>
+                            <a href="#" class="modalclose">&times;</a>
+                        </div>
+                    </div>
+                    <div id="modalbox15" class="modal">
+                        <div  class="modalcontent">
+                            <label for="duyuru2">Duyuru Yayınlanma Tarihi :</label>
+                            <label id="duyuru1" style="margin-left: 10px;">02 / 03 / 2017</label><br><br>
+                            <label>Açıklama :</label><br><br>
+                            <label>Karışık çiçek paketlerimiz bugüne özel %25 indirimlidir.İyi alışverişler dileriz.</label>
+                            <a href="#" class="modalclose">&times;</a>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+
+
+
+
+
+
+
+
+            <!--*************************************************************************************************************-->
+
+    
+            
+            
+
+            <div class="slider">
+                <div class="slides">
+    
+                    <input type="radio" name="radio-btn" value="" id="radio1">
+                    <input type="radio" name="radio-btn" value="" id="radio2">
+                    <input type="radio" name="radio-btn" value="" id="radio3">
+                    <input type="radio" name="radio-btn" value="" id="radio4">
+    
+                    <div class="slide first">
+                     
+
+                        <div class="slider_product">
+                           
+                            <div class="content">
+                              <h2>Beyaz Orkide Aranjman</h2>
+                               <p>Klişelerden hoşlanmayan, sıradan ve birbirinin tekrarı hediyelerden sıkılanlara özel sıradışı bir orkide tasarladık. Orkidenin zarafeti gül ve papatyanın cazibesiyle buluştu.</p>
+                               <a href="../Ürün_Detay_Sayfaları/orkide_urun9_detay.html">Ürün Sayfası</a>
+                            </div>
+                          
+                           <img src="../Çiçekler/Çiçek Türleri/Orkide/Ürün9/orkide_urun9.jpg" alt="">
+
+                       </div>
+                    </div>
+    
+                    <div class="slide">
+                        <div class="slider_product">
+                           
+                            <div class="content">
+                              <h2>Kalpli Vazoda Mor Orkide</h2>
+                               <p>Her anımızın bir anlamı ve kıymeti var. Bu anların tek başına hiçbir önemi yok, çünkü her şey sevdiklerimizle güzel. Kalpli Vazoda Mor Orkide ile sevdiklerinize yanlarında olduğunuzu hissettirin.</p>
+                               <a href="../Ürün_Detay_Sayfaları/orkide_urun10_detay.html">Ürün Sayfası</a>
+                            </div>
+                          
+                           <img src="../Çiçekler/Çiçek Türleri/Orkide/Ürün10/orkide_urun10.jpg" alt="">
+
+                       </div>
+                    </div>
+    
+                    <div class="slide">
+                        <div class="slider_product">
+                           
+                            <div class="content">
+                              <h2>Vazoda 11 Beyaz Gül</h2>
+                               <p>
+                                Çiçek şık bir sadeliktir.
+                                Bir bakışın içinize işlemesi gibi etkileyici, sadeliğe ve şıklığa yaptığı vurgusu, cam vazo içindeki sunumuyla dikkat çeken en derinden gelen temiz hislerin karşılığı beyaz güller ile hazırlanmış aranjman.                                
+                                </p>
+                               <a href="../Ürün_Detay_Sayfaları/gul_urun9_detay.html">Ürün Sayfası</a>
+                            </div>
+                          
+                           <img src="../Çiçekler/Çiçek Türleri/Güller/Ürün9/guller_urun9.jpg" alt="">
+
+                       </div>
+                    </div>
+    
+                    <div class="slide">
+                        <div class="slider_product">
+                           
+                            <div class="content">
+                              <h2>Kutuda Tek Gül</h2>
+                               <p>Sadeliği en üst seviyede sunan, tek kırmızı gülün tüm zarafetini yansıtan en özel günler dahil başka pek çok için çiçek gönderimlerinizde tercih edeceğiniz şık kutu içinde sunum.</p>
+                               <a href="../Ürün_Detay_Sayfaları/gul_urun10_detay.html">Ürün Sayfası</a>
+                            </div>
+                          
+                           <img src="../Çiçekler/Çiçek Türleri/Güller/Ürün10/guller_urun10.jpg" alt="">
+
+                       </div>
+
+                    </div>
+    
+    
+    
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+    
+                </div>
+    
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+           
+    
+            <script type="text/javascript">
+                radio1.checked=true;
+                var counter=2;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked=true;
+                    counter++;
+                    if(counter>4){
+                        counter=1;
+                    }
+                },8000);
+            </script>
+
+
+
+
+             <nav class="baslik">
+                  <h2>POPÜLER ÜRÜNLER</h2>
+             </nav>
+
+            <div class="flower_card_container">
+        
+               <div class="card">
+                    <div class="circle">
+                     <div class="content">
+                       <h2>Fanusta Kırmızı Güller</h2>
+                        <p>Aranjman tasarımında kullanılan malzemesi ile ilk bakışta dikkat çeken fanus içinde ateşiyle yakan, aşkın en güçlü temsili kırmızı gül.</p>
+                        <a href="../Ürün_Detay_Sayfaları/gul_urun1_detay.html">Ürün Sayfası</a>
+                     </div>
+                    </div>
+                    <img src="../Çiçekler/Çiçek Türleri/Güller/Ürün1/guller_urun1.jpg" alt="">
+                </div>
+
+                <div class="card">
+                    <div class="circle">
+                     <div class="content">
+                       <h2>Çift Dallı Beyaz Orkide</h2>
+                        <p>Beyazın asil ve gizemli duruşunun gösterdiği orkide tasarımıyla seramik saksı içinde şık çift dallı beyaz orkide.</p>
+                        <a href="../Ürün_Detay_Sayfaları/orkide_urun1_detay.html">Ürün Sayfası</a>
+                     </div>
+                    </div>
+                    <img src="../Çiçekler/Çiçek Türleri/Orkide/Ürün1/orkide_urun1.jpg" alt="">
+                </div>
+
+                <div class="card">
+                    <div class="circle">
+                     <div class="content">
+                       <h2>Seramikte Çift Dallı Mor Orkide</h2>
+                        <p>Çiçek gönderimlerinde ikisini bir arada isteyenler için beyaz saksısı içinde, mor renkte çift dal orkide ile hazırlanmış şık aranjman.</p>
+                        <a href="../Ürün_Detay_Sayfaları/orkide_urun2_detay.html">Ürün Sayfası</a>
+                     </div>
+                    </div>
+                    <img src="../Çiçekler/Çiçek Türleri/Orkide/Ürün2/orkide_urun2.jpg" alt="">
+                </div>
+
+                <div class="card">
+                    <div class="circle">
+                     <div class="content">
+                       <h2>5 Kırmızı Gül Vazosu</h2>
+                        <p>Cipsofilya ve yeşilliklerin araya serpiştirilerek kırmızı güle yapılan vurguyu arttıracak şekilde hazırlanmış vazo aranjman.</p>
+                        <a href="../Ürün_Detay_Sayfaları/gul_urun2_detay.html">Ürün Sayfası</a>
+                     </div>
+                    </div>
+                    <img src="../Çiçekler/Çiçek Türleri/Güller/Ürün2/guller_urun2.jpg" alt="">
+                </div>
+
+
+                <div class="card">
+                    <div class="circle">
+                     <div class="content">
+                       <h2>Kalpte Kırmızı Güller</h2>
+                        <p>Kalp şeklindeki vazosu ile 12 adet kırmızı gülü, dekoratif taşlar ve cipsofilyalarla bir araya getirilip hazırlanmıştır.</p>
+                        <a href="../Ürün_Detay_Sayfaları/gul_urun3_detay.html">Ürün Sayfası</a>
+                     </div>
+                    </div>
+                    <img src="../Çiçekler/Çiçek Türleri/Güller/Ürün3/guller_urun3.jpg" alt="">
+                </div>
+
+
+
+                <div class="card">
+                    <div class="circle">
+                     <div class="content">
+                       <h2>Seramikte Orkide</h2>
+                        <p>Çiçeklerin asalet sembolü beyaz orkide ile baharın güzelliğini ve bitkilerin saflığını, özel günlerinizde sevdiklerinize gönderebilirsiniz.</p>
+                        <a href="../Ürün_Detay_Sayfaları/orkide_urun3_detay.html">Ürün Sayfası</a>
+                     </div>
+                    </div>
+                    <img src="../Çiçekler/Çiçek Türleri/Orkide/Ürün3/orkide_urun3.jpg" alt="">
+                </div>
+
+            </div>
+              
+            
+            
+   
+
+        </div>
+
+
+
+
+
+        <footer class="footer">
+            
+           
+
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="info">
+                
+                <p>
+                    Karakavak, 4. Sk. 1. Ar. No:17,
+                    Malatya Merkez/Malatya
+                </p> 
+
+                <p>
+                    info@malatyacicekcisoydan.com
+                </p> 
+
+                <p>
+                    0 539 221 12 18
+                </p> 
+            </div>
+    
+            <ul class="footer_list">
+                <li>
+                    <a href="../Temel_Sayfalar/anasayfa.html">Anasayfa</a>
+                </li>
+    
+                <li>
+                 <a href="#">Servisler</a>
+                </li>
+    
+    
+                <li>
+                <a href="#">Hakkımızda</a>
+                </li>
+    
+    
+                <li>
+                 <a href="#">Şartlar</a>
+                </li>
+    
+    
+                 <li>
+                    <a href="#">Gizlilik Politikası</a>
+                </li>
+             
+                <p class="copyright">&copy; Grup 47 @ 2021</p>
+            </ul>
+        </footer>
+       
+        
+
+
+            
+    </body>
+
+
+
+
+</html>
+

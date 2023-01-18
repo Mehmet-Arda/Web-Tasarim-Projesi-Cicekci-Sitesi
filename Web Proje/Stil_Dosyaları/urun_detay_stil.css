@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: "Poppins",sans-serif;
+    
+  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:#bdc3c7 ;
+ 
+    
+   
+}
+
+
+.urun_cerceve{
+    position:absolute;
+    margin-top: 970px;
+    height: 90vh;
+    width: 130vh;
+    background-color: #2c3e50;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 35px rgba(15, 15, 15, 0.39);
+}
+
+.urun_kutu{
+    background-color:#ecf0f1;
+    width: 80%;
+    height: 70%;
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+    
+}
+
+
+
+
+
+
+.urun_gorseller{
+
+    width: 50%;
+}
+
+.urun_gorseller .urun_slider{
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.urun_gorseller .urun_slider img{
+   width: 350px;
+   margin-left: 70px;
+    
+}
+
+.urun_gorseller .urun_gorsel_slider{
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    margin-left: 85px;
+    margin-top: -30px;
+    width: 80%;
+}
+
+.urun_gorseller .urun_gorsel_slider div{
+    width: 40%;
+    height: 80px
+}
+
+.urun_gorseller .urun_gorsel_slider img{
+    width: 80px;
+}
+
+
+
+
+
+
+
+.urun_bilgi{
+  width: 70%;
+}
+
+.urun_bilgi .fiyat{
+    display: flex;
+}
+
+.urun_bilgi .urun_detay_bilgi{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: grey;
+}
+
+.urun_bilgi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    padding: 100px;
+}
+
+.urun_bilgi .yildizlar{
+    color: gold;
+}
+
+h3{
+    color: black;
+    
+}
+
+h5:nth-child(1){
+    color: black;
+}
+
+.bilgi_icerik{
+    font-size: 12px;
+}
+
+.butonlar{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.butonlar button{
+    width: 45%;
+    font: inherit;
+    border:2px solid #0984e3;
+    border-radius: 25px;
+    background-color: white;
+    transition: 0.3s;
+    
+
+}
+
+.butonlar button i{
+    padding-right: 10px;
+}
+
+
+.butonlar button:hover{
+
+    color: white;
+    background: #0984e3;
+    cursor: pointer;
+}
+

@@ -1,0 +1,422 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap');
+
+
+
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    
+  height: 300vh;
+  overflow-x: hidden;
+ 
+  
+}
+
+
+
+.search-box{
+    position: absolute;
+    background: #2f3640;
+    height: 60px;
+    border-radius: 40px;
+    padding:10px ;
+
+    font-family: "Poppins",sans-serif;
+    
+    
+}
+
+.search-box:hover > .search-txt{
+    width: 300px;
+    padding:0 6px ;
+}
+
+
+.search-box:hover > .search-btn i{
+    background: white;
+}
+
+
+
+.search-btn i{
+    display: flex;
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+    
+
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color:white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+
+
+
+.profile{
+   
+    background: transparent;
+    cursor: pointer;
+  
+    margin-left: 0rem;
+    align-items: center;
+   
+}
+.profile i {
+    color:#3338FF ;
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.profile i:hover{
+    color: crimson;
+}
+
+
+.basket{
+    background: transparent;
+    cursor: pointer;
+  
+  
+    margin-left: 10rem;
+    align-items: center;
+}
+
+.basket i {
+    color:#3338FF ;
+    font-size: 40px;
+    transition: 0.3s ease-in-out;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.basket i:hover{
+    color: crimson;
+}
+
+
+
+.dd_menu_container{
+    display: none;
+    transition: 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dd_menu{
+    
+    top: 100px;
+    right: -10px;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 0 3px lightgrey;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+   
+    overflow: hidden;
+}
+
+.dd_menu .dd_left{
+    background: crimson;
+    padding: 15px 5px;
+    
+}
+
+.dd_menu .dd_left li i{
+    color: white;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-top: 11px;
+
+    transition: 300ms ease-in-out;
+}
+
+
+
+.dd_menu .dd_right{
+    padding: 15px 20px;
+    text-align: center;
+   
+}
+
+.dd_menu .dd_right li ,.dd_menu .dd_right li a{
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    padding: 12px 6px 10px 6px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: 300ms ease-in-out;
+}
+
+.dd_menu_before{
+    
+    
+    content: "";
+    position: absolute;
+    top: 80px;
+    right: 65px;
+  
+    border: 10px solid;
+    border-color: transparent transparent crimson transparent;
+}
+
+
+.profile.active .dd_menu_container{
+    display: flex;
+}
+
+
+#Giris:hover ,#Fav:hover, #Kaydol:hover{
+    background-color: lightsteelblue;
+}
+
+#Giris_icon:hover{
+    color: lightskyblue;
+}
+
+#Fav_icon:hover{
+    color: lightskyblue;
+}
+
+
+#Kaydol_icon:hover{
+    color: lightskyblue;
+}
+
+
+
+
+.logonav{
+    box-sizing: border-box;
+    margin-right: 15rem;
+    margin-left: 15rem;
+    box-shadow: 0 0 10px #b2b2b4;
+    position: relative;
+    background-color: #ecf0f1;
+    border-radius:5px;
+
+    z-index: 3;
+    
+  
+}
+
+.logonav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    margin: 1rem 3rem;
+    
+}
+
+.logonav__list li{
+   list-style: none;
+   
+   
+}
+
+.logonav__listlogo{
+    margin-right: auto;
+    
+    
+  
+}
+.logonav__listlogo img{
+
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+
+}
+
+.logonav__listlogo:hover{
+    cursor: pointer;
+}
+
+
+.logonav__listitem{
+    list-style: none;
+    font-weight: bold;
+    position: absolute;
+    padding: 1.5rem 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.home_container:not(:first-child), .home_container:not(:last-child){
+   
+    margin: 0rem 0rem 0 0rem;
+    padding:0 0rem 0 0rem;
+    height: 240vh;
+
+  
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background:#ecf0f1;
+    overflow-x: hidden;
+}
+
+
+
+
+
+.left_hbar{
+    position: absolute;
+    margin-left: -1350px;
+    box-sizing: border-box;
+    background-color: #27ae60; 
+    display: flex;
+    top: 260px; 
+    height: 700px;
+    width: 400px; 
+    z-index: 1;
+    flex-wrap: wrap;
+    box-shadow: 0 5px 35px rgba(15, 15, 15, 0.39);
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+
+    
+    border-radius: 10px;
+}
+
+.left_hbar_baslik{
+    
+    padding: 20px 0px 20px 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    background: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+}
+
+.left_hbar ul{
+    list-style: none;
+    margin-bottom: 40px;
+    
+    
+   
+}
+
+.left_hbar a{
+    text-decoration: none;
+}
+
+.left_hbar li{
+    border:2px solid; border-width: 2px; 
+    padding: 20px 60px 20px 60px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ecf0f1;
+    background: #0069cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left_hbar li:hover{
+    background: #e1e5ee;
+    color: #0069cc;
+}
+
+
+
+
+
+
+
+.baslik{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 830px;
+    font-size: 40px;    
+  
+   
+    color: black;
+    font-family: "Poppins",sans-serif;
+   
+}
+
+.baslik h2{
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

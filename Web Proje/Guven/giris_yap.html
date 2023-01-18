@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="icon" type="image/x-icon" href="../Görseller/favicon.png" type="image/x-ico" />
+        <title>Giriş Yap</title>
+        
+        <link rel="stylesheet" href="uyelik.css">
+
+        <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
+        <link rel="stylesheet" href="../Stil_Dosyaları/nav_bar_stil.css">
+        <link rel="stylesheet" href="../Stil_Dosyaları/footer_stil.css">
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+           .giris_container{
+              
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-wrap: wrap;
+               margin-top: 50px;
+               color: white;
+               padding-top: 40px;
+               padding-bottom: 150px;
+           }
+
+            #menu{
+                margin-top: 50px;
+                margin-bottom: 50px;
+                background-color: white;
+                width:500px;
+                text-align: center;
+                border-radius: 10px;
+                
+                padding: auto;
+            }
+            #menu a{
+                color:black;
+            }
+            #menu a:hover{
+                color: blue;
+            }
+            #girisyap{
+                border-style: hidden;
+                width: 100px;
+                border-radius: 10px;
+                height: 30px;
+                background-color: yellow;
+            }
+            #girisyap:hover{
+                box-shadow:white 2px 2px 10px;
+                background-color:blue;
+            }
+            #giriseleman a{
+                color:white;
+                margin-right: 40px;
+            }
+            #giriseleman a:hover{
+                color:yellow;
+            }
+            #resim{
+                top: 0;
+                position: absolute;
+                z-index: -1;
+                width: 100%;
+            }
+            fieldset{
+                border-color: yellow;  margin-left: 1000px;
+                margin-right: 1000px;
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <nav class="nav">
+
+            <ul class="nav__list">
+
+                <a href="../Temel_Sayfalar/anasayfa.html">
+                    <li class="nav__listitem">
+                        <i class="fas fa-home"></i>
+                        Ana Sayfa
+                    </li>
+                </a>
+                
+
+                <li class="nav__listline"></li>
+
+
+                <li class="nav__listitem">
+                    <i class="fas fa-list"></i>
+                    Ürünlerimiz
+                    <ul class="nav__listitemdrop">
+                        <li>Çiçek Türleri
+                            <ul class="nav__listitemdrop2_turler">
+                                <a href="../Temel_Sayfalar/guller_listesi.html"><li>Güller</li></a>
+                                <a href="../Temel_Sayfalar/orkideler_listesi.html"><li>Orkide</li></a>
+                                <li>Antoryum</li>
+                                <li>Gerbera</li>
+                                <li>Lilyum</li>
+                            </ul>
+                        </li>
+                        <li>Gönderim Amacı
+                            <ul class="nav__listitemdrop2_amac">
+                                <li>Açılış & Kutlama</li>
+                                <li>Anneye</li>
+                                <li>Babaya</li>
+                                <li>Doğum Günü</li>
+                                <li>Nikah & Düğün</li>
+                                <li>Sevgiliye Çiçek</li>
+                            </ul>
+
+                        </li>
+                        
+                        <li>Hazırlanışa Göre
+                            <ul class="nav__listitemdrop2_hazirlanis">
+                                <li>Buketler</li>
+                                <li>Çelenk</li>
+                                <li>Vazo Çiçekleri</li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__listline"></li>
+
+                <li class="nav__listitem">
+                    <i class="fas fa-stream"></i>
+                    Birimlerimiz
+                    <ul class="nav__listitemdrop">
+                        <li>Alt Başlık 1</li>
+                        <li>Alt Başlık 2</li>
+                        <li>Alt Başlık 3</li>
+                    </ul>
+                </li>
+
+                <li class="nav__listline"></li>
+
+                <a href="../Guven/misyon_vizyon.html">
+                    <li class="nav__listitem">
+                        <i class="fas fa-bullseye"></i>
+                        Misyon-Vizyon
+                    </li>
+                </a>
+                
+
+                <li class="nav__listline"></li>
+                
+                <a href="../Guven/hakkimizda.html">
+                    <li class="nav__listitem">
+                        <i class="fas fa-question-circle"></i>
+                        Hakkımızda
+                    </li>
+                </a>
+                
+
+                <li class="nav__listline"></li>
+
+
+                <a href="../Temel_Sayfalar/iletisim.html">
+                    <li class="nav__listitem">
+                        <i class="fas fa-envelope"></i>
+                        İletişim
+                    </li>
+                </a>
+                
+
+            </ul>
+
+        </nav>
+
+      
+
+        <img id="resim" src="kirmizi_gul.jpeg">
+
+
+
+        
+
+        <div class="giris_container">
+            <nav id="menu">
+                <a href="uyelik.html">Üyelik İşlemleri</a> |
+                <a href="giris_yap.html">Giriş Yap</a>
+            </nav>
+
+            <h1 style="color: white;   width:1800px;">GİRİŞ İŞLEMLERİ</h1>
+
+
+            <p style="color: white;" id="girismetni   width:1800px;"  >Lütfen aşağıdaki alanlara üye olurken kullandığınız <br> e-posta adresinizi ve şifrenizi girerek 
+                "Giriş Yap" butonuna basınız.</p>
+            <form action="girisyap.php" method="GET" id="giriseleman">
+                <fieldset>
+                    <legend style="color: white;">E-Postanız</legend>
+                    <input style="background-color: transparent; color: white;" type="email" required>
+                </fieldset>
+                    <br> <br>
+                <fieldset>
+                    <legend style="color: white;">Şifreniz</legend>
+                    <input style="background-color: transparent;color: white;" type="password" required>
+                </fieldset> 
+                <center>
+                    <a href="#">Şifremi Unuttum</a>
+                    <button id="girisyap" style="margin-top: 10px;" onclick="showMe()">Giriş Yap</button>
+                </center>
+            </form>
+        </div>
+
+
+
+        <footer class="footer">
+            
+           
+
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="info">
+                
+                <p>
+                    Karakavak, 4. Sk. 1. Ar. No:17,
+                    Malatya Merkez/Malatya
+                </p> 
+
+                <p>
+                    info@malatyacicekcisoydan.com
+                </p> 
+
+                <p>
+                    0 539 221 12 18
+                </p> 
+            </div>
+    
+            <ul class="footer_list">
+                <li>
+                    <a href="../Temel_Sayfalar/anasayfa.html">Anasayfa</a>
+                </li>
+    
+                <li>
+                 <a href="#">Servisler</a>
+                </li>
+    
+    
+                <li>
+                <a href="#">Hakkımızda</a>
+                </li>
+    
+    
+                <li>
+                 <a href="#">Şartlar</a>
+                </li>
+    
+    
+                 <li>
+                    <a href="#">Gizlilik Politikası</a>
+                </li>
+             
+                <p class="copyright">&copy; Grup 47 @ 2021</p>
+            </ul>
+        </footer>
+
+
+  
+
+
+
+
+    </body>
+    <script>
+        function showMe(){
+            alert("Giriş Yapılmıştır");
+        }
+    </script>
+</html>
